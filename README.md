@@ -172,7 +172,7 @@ curl -X POST http://localhost:5000/disagreement \
 
 - `500 Internal Server Error`: Indicates an unexpected error occurred during the calculation.
 
-Please note that the API server should be running locally at \`http://localhost:5000\`.
+Please note that the API server should be running locally at \`http://localhost:5000`.
 
 ## Contributing
 
@@ -194,4 +194,8 @@ Email: c.pirie11@rgu.ac.uk
 
 If you use the AGREE API in your research work or publications, please cite it as:
 
-[Provide citation details here]
+@article{pirie2023agree,
+  title={AGREE: A Feature Attribution Aggregation Framework to Address Explainer Disagreements with Alignment Metrics},
+  author={Pirie, Craig and Wiratunga, Nirmalie and Wijekoon, Anjana and Moreno-Garcia, Carlos Francisco},
+  year={2023}
+}
