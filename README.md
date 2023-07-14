@@ -15,7 +15,7 @@ AGREE (Aggregation for Robust Explanation Experience) API is a Flask-based API t
 
 1. Clone the repository:
 
-   `git clone <repository_url>`
+   `git clone https://github.com/craigybaeb/AGREE.git`
 
 2. Navigate to the project directory:
 
