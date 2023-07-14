@@ -51,7 +51,7 @@ To run the AGREE API server using Docker Compose, make sure you have Docker Comp
 
 1. Start the Docker Compose services:
 
-   `docker-compose up\`
+   `docker-compose up`
 
 The API server will be accessible at `http://localhost:5000`.
 
