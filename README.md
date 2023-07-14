@@ -67,11 +67,63 @@ By default, the API server will run on `http://localhost:5000`.
 
 The AGREE API exposes the following endpoints:
 
-- `POST /disagreement`: Calculate the disagreement between explainers.
-- `POST /aggregate`: Perform aggregation on explanations.
-- `GET /`: Display the API information, available routes, and usage details.
+### `POST /disagreement`
 
-For detailed information on the request parameters, response formats, and error codes, please refer to the API documentation.
+Calculate the disagreement between explainers.
+
+**Request Parameters**
+
+- `disagreement_metric` (string): The method used to calculate disagreement.
+- `overall_disagreement` (float): The overall agreement confidence between explainers.
+- `disagreement_scores` (dictionary): A dictionary containing all of the explainers used and their disagreement scores.
+- `average_method` (string): The method used to determine the average (median or mean).
+- `data_to_explain` (numpy array): A numpy array of the data to explain.
+- `model` (file): A Keras model file to explain.
+- `scope` (string): The scope of the explanation (global or local).
+
+**Example Request**
+
+```bash
+curl -X POST http://localhost:5000/disagreement \
+  -H "Content-Type: application/json" \
+  -d '{
+    "disagreement_metric": "case_align",
+    "overall_disagreement": 0.85,
+    "disagreement_scores": {
+      "explainer1": 0.9,
+      "explainer2": 0.8
+    },
+    "average_method": "mean",
+    "data_to_explain": [[1, 2, 3], [4, 5, 6]],
+    "model": "@path/to/model.h5",
+    "scope": "global"
+  }'
+```
+
+**Response Parameters**
+
+- `disagreement_metric` (string): The method used to calculate disagreement.
+- `overall_disagreement` (float): The overall agreement confidence between explainers.
+- `disagreement_scores` (dictionary): A dictionary containing all of the explainers used and their disagreement scores.
+- `average_method` (string): The method used to determine the average (median or mean).
+- `explainers` (list of strings): The explainers used in the disagreement calculation.
+
+**Example Response**
+
+```json
+{
+  "disagreement_metric": "case_align",
+  "overall_disagreement": 0.85,
+  "disagreement_scores": {
+    "explainer1": 0.9,
+    "explainer2": 0.8
+  },
+  "average_method": "mean",
+  "explainers": ["explainer1", "explainer2"]
+}
+```
+
+Please note that the API server should be running locally at \`http://localhost:5000\`.
 
 ## Contributing
 
@@ -85,7 +137,7 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 
 For any questions or inquiries about the AGREE API, please contact:
 
-Email: your-email@example.com
+Email: c.pirie11@rgu.ac.uk
 
 ---
 
