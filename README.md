@@ -24,6 +24,8 @@ AGREE (Aggregation for Robust Explanation Experiences) API is a Flask-based API 
 - [Error Handling](#error-handling)
 - [Contributing](#contributing)
 - [Author](#author)
+- [Future Work](#future-work)
+- [Contact](#contact)
 - [License](#license)
 
 ## Installation
@@ -195,6 +197,18 @@ To explore more of Craig's research and academic profiles, you can visit the fol
 - [LinkedIn](https://www.linkedin.com/in/craig-pirie-aberdeen/)
 
 Feel free to reach out to Craig for any inquiries or collaborations at [c.pirie11@rgu.ac.uk](mailto:c.pirie11@rgu.ac.uk).
+
+## Future Work
+
+In the future, Craig Pirie plans to further extend the AGREE (Aggregation for Robust Explanation Experience) method and API to enhance its capabilities and address additional challenges in the field of explainable AI. Some of the planned extensions include:
+
+1. **Integration of Counterfactual Explanations**: Craig aims to incorporate counterfactual explanations into the AGREE framework. This will allow the measurement of disagreement between counterfactual explanations and the aggregation of these explanations. The counterfactual explanations will adhere to the principles of fairness, providing only plausible and actionable insights.
+
+2. **Natural Language Explanations**: Craig aims to introduce natural language explanations within the AGREE API. This extension aims to alleviate the cognitive burden associated with the disagreement problem. The natural language explanations will not only explain the underlying models but also provide insights into the explainers themselves and their levels of disagreement.
+
+3. **Front-End Interface**: To enhance usability and accessibility, Craig plans to develop a user-friendly front-end interface that interacts with the AGREE API. This interface will allow users to conveniently call the AGREE API and receive aggregated explanations through an intuitive and interactive platform.
+
+Stay tuned for these exciting developments!
 
 ## License
 
