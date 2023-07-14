@@ -1,6 +1,9 @@
 # AGREE API
 
-AGREE (Aggregation for Robust Explanation Experience) API is a Flask-based API that calculates disagreement between explainers and provides aggregate explanations. It is designed to determine the level of disagreement in factual explainers and provide an aggregated explanation that combines the knowledge from a given number of explainers.
+AGREE (Aggregation for Robust Explanation Experiences) API is a Flask-based API developed by the Robert Gordon University that calculates disagreement between explainers and provides aggregate explanations. It is designed to determine the level of disagreement in factual explainers and provide an aggregated explanation that combines the knowledge from a given number of explainers.
+
+![Robert Gordon University](rgu.png)
+
 
 ## Features
 
