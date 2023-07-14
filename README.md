@@ -2,7 +2,7 @@
 
 AGREE (Aggregation for Robust Explanation Experiences) API is a Flask-based API developed by the Robert Gordon University that calculates disagreement between explainers and provides aggregate explanations. It is designed to determine the level of disagreement in factual explainers and provide an aggregated explanation that combines the knowledge from a given number of explainers.
 
-![Robert Gordon University]([rgu.jpg](https://i0.wp.com/ecareersgrad.co.uk/wp-content/uploads/2022/07/RGU-logo-1.png?resize=768%2C141&ssl=1))
+![The Robert Gordon University]([http://url/to/img.png](https://i0.wp.com/ecareersgrad.co.uk/wp-content/uploads/2022/07/RGU-logo-1.png?ssl=1))
 
 
 ## Features
