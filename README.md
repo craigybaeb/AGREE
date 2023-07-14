@@ -14,6 +14,7 @@ AGREE (Aggregation for Robust Explanation Experience) API is a Flask-based API t
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
+- [Performance Considerations](#performance)
 - [API Endpoints](#api-endpoints)
   - [Calculate Disagreement](#calculate-disagreement)
   - [Perform Aggregation](#perform-aggregation)
@@ -72,6 +73,20 @@ To start the AGREE API server using Python, run the following command from the p
 `python -m flask run`
 
 By default, the API server will run on `http://localhost:5000`.
+
+## Performance Considerations
+
+The AGREE API provides powerful functionality for calculating disagreement and performing aggregation. However, there are a few performance considerations to keep in mind to ensure optimal usage:
+
+### Number of Explainers
+
+The computation time for calculating disagreement increases exponentially with the number of explainers used. Therefore, it is recommended to reduce the number of instances to explain as the number of explainers increases. This can help mitigate longer computation times and ensure efficient processing of the API requests.
+
+### Disagreement Metric
+
+By default, the AGREE API uses the "Case Alignment" metric for calculating disagreement. While this metric is more robust and provides better aggregations, it may take longer to compute. If faster explanations are desired, it is recommended to use alternative feature overlap-based methods, such as "Feature Agreement," "Sign Agreement," or others provided by the API.
+
+Consider your specific requirements and time constraints when choosing the appropriate disagreement metric to strike a balance between accuracy and computation time.
 
 ## API Endpoints
 
