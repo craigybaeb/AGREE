@@ -1,5 +1,0 @@
-Flask==2.0.1
-numpy==1.21.0
-Flask-Swagger==0.2.14
-Flask-RESTX==0.5.1
-werkzeug==2.1.2
