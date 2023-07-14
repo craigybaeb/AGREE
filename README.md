@@ -123,6 +123,30 @@ curl -X POST http://localhost:5000/disagreement \
 }
 ```
 
+**Status Codes**
+
+- `200 OK`: Indicates a successful calculation. The response will contain the calculated disagreement information.
+- `400 Bad Request`: Indicates that the input parameters are invalid or missing.
+
+  - If any of the following parameters are missing, the API will return a 400 error:
+    - `disagreement_metric`: The method used to calculate disagreement.
+    - `overall_disagreement`: The overall agreement confidence between explainers.
+    - `disagreement_scores`: A dictionary containing all of the explainers used and their disagreement scores.
+    - `average_method`: The method used to determine the average (median or mean).
+    - `data_to_explain`: A numpy array of the data to explain.
+    - `model`: A Keras model file to explain.
+    - `scope`: The scope of the explanation (global or local).
+
+  - Additional requirements and validation for the input parameters:
+    - `data_to_explain` must be a 2D array of the same shape.
+    - There must be at least 2 explainers in the `disagreement_scores` dictionary.
+    - The `model` file must have the extension `.h5`.
+    - The `scope` parameter must be either "local" or "global".
+    - The `average_method` parameter must be either "mean" or "median".
+    - The `disagreement_metric` must be one of the predefined values.
+
+- `500 Internal Server Error`: Indicates an unexpected error occurred during the calculation.
+
 Please note that the API server should be running locally at \`http://localhost:5000\`.
 
 ## Contributing
