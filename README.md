@@ -183,7 +183,7 @@ Please note that the API server should be running locally at \`http://localhost:
 Contributions to the AGREE API are welcome! If you find any issues or would like to propose improvements, please open an issue or submit a pull request.
 
 ## Author
-[![Craig Pirie](https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=LEqE644AAAAJ&citpid=1)](https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=LEqE644AAAAJ&citpid=1)
+[![Craig Pirie](https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=LEqE644AAAAJ&citpid=1)](https://scholar.google.com/citations?user=LEqE644AAAAJ&hl=en)
 
 Craig Pirie is a part-time PhD student at the Robert Gordon University (RGU), specializing in ensemble explainable (XAI) methods and solving the disagreement problem between explainers. He is currently working as a full-time research assistant at RGU. He is expected to complete his PhD studies in the year 2025.
 
@@ -212,8 +212,10 @@ Email: c.pirie11@rgu.ac.uk
 
 If you use the AGREE API in your research work or publications, please cite it as:
 
+```bash
 @article{pirie2023agree,
   title={AGREE: A Feature Attribution Aggregation Framework to Address Explainer Disagreements with Alignment Metrics},
   author={Pirie, Craig and Wiratunga, Nirmalie and Wijekoon, Anjana and Moreno-Garcia, Carlos Francisco},
   year={2023}
 }
+```
