@@ -11,6 +11,15 @@ AGREE (Aggregation for Robust Explanation Experience) API is a Flask-based API t
 - Error handling and validation of input parameters
 - Dockerized setup for easy deployment
 
+- [Installation](#installation)
+- [Usage](#usage)
+- [API Endpoints](#api-endpoints)
+  - [Calculate Disagreement](#calculate-disagreement)
+  - [Perform Aggregation](#perform-aggregation)
+- [Error Handling](#error-handling)
+- [Contributing](#contributing)
+- [License](#license)
+
 ## Installation
 
 1. Clone the repository:
