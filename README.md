@@ -183,9 +183,6 @@ Please note that the API server should be running locally at \`http://localhost:
 Contributions to the AGREE API are welcome! If you find any issues or would like to propose improvements, please open an issue or submit a pull request.
 
 ## Author
-<p align="center">
-  <img src="[http://some_place.com/image.png](https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=LEqE644AAAAJ&citpid=1))" />
-</p>
 [![Craig Pirie](https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=LEqE644AAAAJ&citpid=1)](https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=LEqE644AAAAJ&citpid=1)
 
 Craig Pirie is a part-time PhD student at the Robert Gordon University (RGU), specializing in ensemble explainable (XAI) methods and solving the disagreement problem between explainers. He is currently working as a full-time research assistant at RGU. He is expected to complete his PhD studies in the year 2025.
