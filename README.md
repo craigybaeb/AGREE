@@ -23,6 +23,7 @@ AGREE (Aggregation for Robust Explanation Experiences) API is a Flask-based API 
   - [Perform Aggregation](#perform-aggregation)
 - [Error Handling](#error-handling)
 - [Contributing](#contributing)
+- [Author](#author)
 - [License](#license)
 
 ## Installation
@@ -192,6 +193,22 @@ For any questions or inquiries about the AGREE API, please contact:
 Email: c.pirie11@rgu.ac.uk
 
 ---
+
+## Author
+
+[![Craig Pirie](https://example.com/path/to/your/image.png](https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=LEqE644AAAAJ&citpid=1)
+
+Craig Pirie is a part-time PhD student at the Robert Gordon University (RGU), specializing in ensemble explainable (XAI) methods and solving the disagreement problem between explainers. He is currently working as a full-time research assistant at RGU. He is expected to complete his PhD studies in the year 2025.
+
+To explore more of Craig's research and academic profiles, you can visit the following links:
+
+- [Google Scholar](https://scholar.google.com/citations/your-profile)
+- [ORCID](https://orcid.org/your-profile) - (Or use the ORCID 0000-0002-6799-0497)
+- [RGU Worktribe](https://rgu-repository.worktribe.com/person/1065030/craig-pirie)
+- [LinkedIn](https://www.linkedin.com/in/craig-pirie-aberdeen/)
+
+Feel free to reach out to Craig for any inquiries or collaborations at [c.pirie11@rgu.ac.uk](mailto:c.pirie11@rgu.ac.uk).
+
 
 ## Citation
 
