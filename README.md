@@ -30,6 +30,8 @@ AGREE (Aggregation for Robust Explanation Experiences) API is a Flask-based API 
 
 ## Installation
 
+The installation guide assumes that you have python3, pip3 and git installed.
+
 1. Clone the repository:
 
    `git clone https://github.com/craigybaeb/AGREE.git`
@@ -40,7 +42,7 @@ AGREE (Aggregation for Robust Explanation Experiences) API is a Flask-based API 
 
 3. Install the required dependencies:
 
-   `pip install -r requirements.txt`
+   `pip3 install -r src/requirements.txt`
 
 ## Configuration
 
@@ -74,7 +76,7 @@ The API server will be accessible at `http://localhost:5000`.
 
 ### Running with Python
 
-To start the AGREE API server using Python, run the following command from the project root directory:
+To start the AGREE API server using Python, run the following command from the /src directory:
 
 `python -m flask run`
 
