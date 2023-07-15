@@ -36,13 +36,13 @@ The installation guide assumes that you have python3, pip3 and git installed.
 
    `git clone https://github.com/craigybaeb/AGREE.git`
 
-2. Navigate to the project directory:
+2. Navigate to the project src directory:
 
-   `cd AGREE-API`
+   `cd AGREE-API/src`
 
 3. Install the required dependencies:
 
-   `pip3 install -r src/requirements.txt`
+   `pip3 install -r requirements.txt`
 
 ## Configuration
 
