@@ -1,0 +1,30 @@
+# Python specific
+*.pyc
+__pycache__/
+venv/
+env/
+dist/
+build/
+*.egg-info/
+
+# Docker specific
+docker-compose.yml
+docker-compose.override.yml
+.dockerignore
+
+# Editor/IDE specific
+.vscode/
+.idea/
+
+# System specific
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Ignore the compiled Python bytecode files
+*.pyc
+
+# Ignore the virtual environment
+venv/
