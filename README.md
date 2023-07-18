@@ -110,7 +110,7 @@ Calculate the disagreement between explainers.
 - `average_method` (string): The average method used in aggregation (median or mean).
 - `data_to_explain` (numpy array): A numpy array of the data to explain.
 - `scope` (string): The scope of the explanation (global or local).
-- `num_neighbours`: The number of neighbours to compare in the case base when using case align.
+- `num_neighbours` (integer): The number of neighbours to compare in the case base when using case align.
 - `k` (integer): The number of features used to determine feature agreement (does not apply to case align).
 - `f` (integer[]): A list of feature IDs to compare in pairwise rank agreement and rank correlation.
 
