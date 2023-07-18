@@ -107,12 +107,10 @@ Calculate the disagreement between explainers.
 **Request Parameters**
 
 - `disagreement_metric` (string): The method used to calculate disagreement.
-- `overall_disagreement` (float): The overall agreement confidence between explainers.
-- `disagreement_scores` (dictionary): A dictionary containing all of the explainers used and their disagreement scores.
 - `average_method` (string): The method used to determine the average (median or mean).
 - `data_to_explain` (numpy array): A numpy array of the data to explain.
-- `model` (file): A Keras model file to explain.
 - `scope` (string): The scope of the explanation (global or local).
+- `k` (integer): The 
 
 **Example Request**
 
@@ -121,15 +119,14 @@ curl -X POST http://localhost:5000/disagreement \
   -H "Content-Type: application/json" \
   -d '{
     "disagreement_metric": "case_align",
-    "overall_disagreement": 0.85,
     "disagreement_scores": {
-      "explainer1": 0.9,
-      "explainer2": 0.8
+      "LIME": 0.9,
+      "SHAP": 0.8
     },
     "average_method": "mean",
     "data_to_explain": [[1, 2, 3], [4, 5, 6]],
-    "model": "@path/to/model.h5",
-    "scope": "global"
+    "scope": "global",
+    "k": 3,
   }'
 ```
 
@@ -202,7 +199,7 @@ Feel free to reach out to Craig for any inquiries or collaborations at [c.pirie1
 
 ## Future Work
 
-In the future, Craig Pirie plans to further extend the AGREE (Aggregation for Robust Explanation Experience) method and API to enhance its capabilities and address additional challenges in the field of explainable AI. Some of the planned extensions include:
+In the future, Craig plans to further extend the AGREE (Aggregation for Robust Explanation Experience) method and API to enhance its capabilities and address additional challenges in the field of explainable AI. Some of the planned extensions include:
 
 1. **Integration of Counterfactual Explanations**: Craig aims to incorporate counterfactual explanations into the AGREE framework. This will allow the measurement of disagreement between counterfactual explanations and the aggregation of these explanations. The counterfactual explanations will adhere to the principles of fairness, providing only plausible and actionable insights.
 
